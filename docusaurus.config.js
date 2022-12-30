@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'TypeIt',
   tagline: 'The most versatile JavaScript typewriter effect library on the planet.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://typeitjs.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -61,23 +61,32 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
-        logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
-        },
+        title: 'TypeIt',
+        // logo: {
+        //   alt: 'TypeIt Logo',
+        //   src: 'img/logo.svg',
+        // },
         items: [
+          {
+            href: '#pricing',
+            label: 'Pricing',
+            position: 'right',
+          },
+          {
+            href: '#flavors',
+            label: 'Flavors',
+            position: 'right',
+          },
+          {
+            href: '/build-your-own/',
+            label: 'Build an Animation',
+            position: 'right',
+          },
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
             position: 'right',
+            label: 'Documentation',
           },
         ],
       },
@@ -127,7 +136,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()}. Built with Docusaurus.`,
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
